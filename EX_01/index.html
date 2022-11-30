@@ -13,10 +13,10 @@
             <legend>Eleições:</legend>
             <label for="num-candidato">Nº do candidato</label>
             <input type="text" for="num-candidato" maxlength=2 id="num-candidato">
-            <button id="btn-confirma" onclick="pegarVoto()">
+            <button id="btn-confirma" onclick="pegarVoto(false)">
                 <h1>CONFIRMA</h1>
             </button>
-            <button>
+            <button  onclick="pegarVoto(true)">
                 <h1>ANULAR</h1>
             </button>
             <div>

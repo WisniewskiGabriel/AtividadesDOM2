@@ -3,19 +3,28 @@ let votesTotal = 0;
 let qtdVotos13 = 0;
 let qtdVotos22 = 0;
 let qtdVotosNulos = 0;
+let isNull = false;
 let voteIsAttributed = false;
 let displayVotes13 = document.getElementById("display13");
 let displayVotes22 = document.getElementById("display22");
 let displayVotesNulos = document.getElementById("displayNulos");
 let voteSelector = document.getElementById("num-candidato");
 
-function pegarVoto(){
+
+function pegarVoto(isNull){ 
+
+    console.log(isNull);
 
     voteIsAttributed = false;
     voteValue = voteSelector.value;
     voteSelector.value = '';
     voteValue = Number(voteValue);
     votesTotal = votesTotal+1;
+
+    if (isNull){
+        voteIsAttributed = true;
+        qtdVotosNulos = qtdVotosNulos+1;
+    }
 
     if (voteValue === 13 && !voteIsAttributed) {
         qtdVotos13 = qtdVotos13+1;
