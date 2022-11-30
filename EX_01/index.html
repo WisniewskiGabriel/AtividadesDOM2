@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Eleições:</legend>
+            <label for="num-candidato">Nº do candidato</label>
+            <input type="text" for="num-candidato" maxlength=2 id="num-candidato">
+            <button id="btn-confirma" onclick="pegarVoto()">
+                <h1>CONFIRMA</h1>
+            </button>
+            <button>
+                <h1>ANULAR</h1>
+            </button>
+            <div>
+                <table>
+                    <tr>
+                        <th>
+                            <p>CANDIDATO</p>
+                        </th>
+                        <th>
+                            <p>Nº</p>
+                        </th>
+                        <th>
+                            <p>QTD. DE VOTOS</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><p>LULA</p></td>
+                        <td><p>13</p></td>
+                        <td><p id="display13">Não recebeu votos</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>BOLSONARO</p></td>
+                        <td><p>22</p></td>
+                        <td><p id="display22">Não recebeu votos</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>NULOS E BRANCOS</p></td>
+                        <td><p>Vazio ou legenda inexistente</p></td>
+                        <td><p id="displayNulos">Não recebeu votos</p></td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </main>
+   
+</body>
+<script src="index.js"></script>
+</html>
