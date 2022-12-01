@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#user-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+}
+#user-inputs section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#user-inputs button{
+    background-color: rgb(190, 190, 190);
+    border-style: none;
+    border-radius: 1rem;
+    height: auto;
+    margin-top: 1rem;
+}
+#user-inputs button:hover{
+    transition: 0.5s;
+    background-color: rgb(10, 36, 83);
+    color: white;
+    cursor: pointer;
+}
+
+#user-inputs button h3{
+    margin: 0.3rem;
+    padding: 0;
+}
+
+#results{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+}
+
+#results table th,td{
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 2px;
+
+    
+}
+#results table th h4,p{
+    padding: 0;
+    margin: 0;
+}
