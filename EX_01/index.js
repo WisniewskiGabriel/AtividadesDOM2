@@ -9,7 +9,7 @@ let displayVotes13 = document.getElementById("display13");
 let displayVotes22 = document.getElementById("display22");
 let displayVotesNulos = document.getElementById("displayNulos");
 let voteSelector = document.getElementById("num-candidato");
-
+let resultadoCalculo;
 
 function pegarVoto(isNull){ 
 
@@ -42,12 +42,23 @@ function pegarVoto(isNull){
     console.log("Total: "+votesTotal+"\n13: "+qtdVotos13+"\n22: "+qtdVotos22+"\nNulos: "+qtdVotosNulos);
     
     if (qtdVotos13 > 0){
-        displayVotes13.textContent = ((qtdVotos13*100)/votesTotal).toFixed(2)+"%";
+        calcularMedia(votesTotal,qtdVotos13);
+        displayVotes13.textContent = resultadoCalculo;
     }
     if (qtdVotos22 > 0){
-        displayVotes22.textContent = ((qtdVotos22*100)/votesTotal).toFixed(2)+"%";
+
+        calcularMedia(votesTotal,qtdVotos22)
+        displayVotes22.textContent = resultadoCalculo;
     }
     if (qtdVotosNulos > 0){
-        displayVotesNulos.textContent = ((qtdVotosNulos*100)/votesTotal).toFixed(2)+"%";
+        calcularMedia(votesTotal,qtdVotosNulos)
+        displayVotesNulos.textContent = resultadoCalculo;
     }
+}
+
+function calcularMedia(total,qtdMenor){
+    
+        resultadoCalculo = ((qtdMenor*100)/total).toFixed(2)+"%";
+    return resultadoCalculo;
+
 }
