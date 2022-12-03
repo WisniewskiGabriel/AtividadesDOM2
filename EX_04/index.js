@@ -1,3 +1,5 @@
+// Um pouco exagero para a atividade em questão... mas até que foi divertido montar esse codigozinho
+
 let peopleTable = [{'gender':"Homem",'name':"Diego",'age':"",'obs':""},
                    {'gender':"Homem",'name':"Gabriel",'age':"",'obs':""},
                    {'gender':"Mulher",'name':"Grazi",'age':"",'obs':""},
