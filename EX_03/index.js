@@ -16,14 +16,19 @@ elementBtnClose.addEventListener('click',cleanItUp);
 
 function doAllTasks(){
 
+    let status;    
     let saldo = ((Number(elementSaldo.value)) + (Number(elementCredito.value))) - (Number(elementDebito.value));
-    let status;
+    let numConta = elementConta.value;
+
+    console.log(saldo);
+    
+    saldo = `Saldo atual da conta ${numConta}:\n R\$${saldo.toFixed(2)}`;
 
     if(saldo>0 ? status = "Saldo positivo" : status = "Saldo negativo");
 
     console.log(status);
 
-    displaySaldoAtual.textContent = `R\$ ${saldo.toFixed(2)}`;
+    displaySaldoAtual.textContent = saldo;
     displayStatusConta.textContent = status;
 
     showModal();
