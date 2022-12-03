@@ -12,11 +12,16 @@
         <legend>
             <h4>Produto e soma de idades</h4>
         </legend>
-        <label for="input">
+        <label class="hideWhenCalculating" for="input">
             <p id="subtitle-now">not loaded</p>
-            <input type="text" name="input" id="input-idade">   
+            <input type="text" name="input" id="input-idade" maxlength="3">   
         </label>
-        <button id="btn-go"><h4>Ok</h4></button>
+        <button class="hideWhenCalculating" id="btn-go"><h4>Ok</h4></button>
+        <section id="result">
+            <p id="display-soma">not yet loaded</p>
+            <p id="display-produto">not yet loaded</p>
+            <button id="refresh"><h4>Refazer cálculo</h4></button>
+        </section>
     </fieldset>
     
 </body>
