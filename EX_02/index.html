@@ -12,7 +12,7 @@
         <legend><h1>Calcular horas extras</h1></legend>
         <section>
             <label for="input-horas">Horas trabalhadas no mês:</label>
-            <input id="input-horas" name="input-horas" type="number">
+            <input id="input-horas" name="input-horas" type="text" maxlength="3">
             <button id="btnCalcular">
                 <h3>Calcular</h3>
             </button>
@@ -28,27 +28,33 @@
                     <h4>Base salarial</h4>
                 </th>
                 <th>
-                    <h4>Horas trabalhadas</h4>
+                    <h4>Horas totais</h4>
                 </th>
                 <th>
-                    <h4>Horas normais</h4>
+                    <h4>Remuneração normais</h4>
                 </th>
                 <th>
-                    <h4>Horas extra 50%</h4>
+                    <h4>Remuneração extra 50%</h4>
+                </th>
+                <th>
+                    <h4>Remuneração total</h4>
                 </th>
             </tr>
             <tr>
                 <td>
-                    <p>NOT LOADED YET</p>
+                    <p id="hourly-salary">NOT LOADED YET</p>
                 </td>
                 <td>
-                    <p>NOT LOADED YET</p>
+                    <p id="display-total-hours">NOT LOADED YET</p>
                 </td>
                 <td>
-                    <p>NOT LOADED YET</p>
+                    <p id="display-regular-salary">NOT LOADED YET</p>
                 </td>
                 <td>
-                    <p>NOT LOADED YET</p>
+                    <p id="display-overtime-salary">NOT LOADED YET</p>
+                </td>
+                <td>
+                    <p id="display-total-salary">NOT LOADED YET</p>
                 </td>
             </tr>
         </table>
