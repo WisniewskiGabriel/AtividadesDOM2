@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Mostrar saldo</legend>
+        <label><p>Informe o nº da conta: </p><input type="number" id="num-conta"></label>
+        <label><p>Informe o saldo: </p><input type="number" id="saldo"></label>
+        <label><p>Informe o débito: </p><input type="number" id="debito"></label>
+        <label><p>Informe o crédito: </p><input type="number" id="credito"></label>
+        <button id="btn-go"><h5>Exibir dados da conta.</h5>
+        </button>
+    </fieldset>
+    <section id="result">
+        <div>
+            <article>
+            <p id="saldo-atual">Não iniciado</p>
+            <p id="status-conta">Não iniciado</p>
+            </article>
+            <footer>
+                <button id="btn-close">
+                    <h5>Ok</h5>
+                </button>
+            </footer>
+        </div>
+        
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
