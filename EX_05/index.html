@@ -24,30 +24,38 @@
             <p>Valor unitário</p>
             <input type="text" name="product-value" id="product-value">
         </label>
-        <button><p>Calcular</p></button>
+        <button id="btnGo"><h4>Calcular</h4></button>
+        <div id="result">
+            <section>
+                <article>
+                    <h3>Produto:</h3>
+                    <h4 id="display-name">not loaded</h4>
+                </article>
+                <article>
+                    <h3>Quantidade:</h3>
+                    <h4 id="display-qtd">not loaded</h4>
+                </article>
+                <article>
+                    <h3>Valor bruto:</h3>
+                    <h4 id="display-valueBefore">not loaded</h4>
+                </article>
+                <article>
+                    <h3>Desconto:</h3>
+                    <h4 id="display-discount">not loaded</h4>
+                </article>
+                <article>
+                    <h3>Valor final:</h3>
+                    <h4 id="display-valueAfter">not loaded</h4>
+                </article>
+                </section>
+            <footer>
+                <button id="btn-reload">
+                    <p>Reiniciar</p>
+                </button>
+            </footer>
+        </div>
+        
     </fieldset>
-    <section>
-        <table>
-            <tr>
-                <th>
-                    <h4>Produto</h4>
-                </th>
-                <th>
-                    <h4>Quantidade</h4>
-                </th>
-                <th>
-                    <h4>Valor bruto</h4>
-                </th>
-                <th>
-                    <h4>Desconto</h4>
-                </th>
-                <th>
-                    <h4>Preço final</h4>
-                </th>
-            </tr>
-        </table>
-    </section>
-
 </body>
 <script src="index.js"></script>
 </html>
